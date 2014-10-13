@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-TEDTV2.0-KissXML.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TEDTV2.0-ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -21,22 +26,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>1E159DB19CBE8EFCBBCB4694</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BB1F8F0DF90A2A386DACAE91</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D2EF1FDF689F1E9B29E2AFF0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

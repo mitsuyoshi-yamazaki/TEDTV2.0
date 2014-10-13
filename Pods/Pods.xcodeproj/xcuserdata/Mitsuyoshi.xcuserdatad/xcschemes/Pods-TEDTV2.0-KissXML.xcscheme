@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D3F19004333A1CEF80E58CCA"
-               BuildableName = "libPods-TEDTV2.0-youtube-ios-player-helper.a"
-               BlueprintName = "Pods-TEDTV2.0-youtube-ios-player-helper"
+               BlueprintIdentifier = "AD4778F8B099C0D04A349451"
+               BuildableName = "libPods-TEDTV2.0-KissXML.a"
+               BlueprintName = "Pods-TEDTV2.0-KissXML"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

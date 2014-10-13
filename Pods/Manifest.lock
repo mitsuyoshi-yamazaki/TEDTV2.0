@@ -1,4 +1,5 @@
 PODS:
+  - KissXML (5.0)
   - ReactiveCocoa (2.3.1):
     - ReactiveCocoa/UI
   - ReactiveCocoa/Core (2.3.1):
@@ -9,10 +10,12 @@ PODS:
   - youtube-ios-player-helper (0.1.1)
 
 DEPENDENCIES:
+  - KissXML (= 5.0)
   - ReactiveCocoa (= 2.3.1)
   - youtube-ios-player-helper (= 0.1.1)
 
 SPEC CHECKSUMS:
+  KissXML: e537c38b18ede903ee6de45953a9bd86c131ebe9
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
   youtube-ios-player-helper: 53aecd0b4763a77e6890e9a7c55abb7b5c4bedea
 

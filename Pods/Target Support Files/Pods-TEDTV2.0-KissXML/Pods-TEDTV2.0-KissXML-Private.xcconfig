@@ -1,0 +1,5 @@
+#include "Pods-TEDTV2.0-KissXML.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/KissXML" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/KissXML" "${PODS_ROOT}/Headers/Public/ReactiveCocoa" "${PODS_ROOT}/Headers/Public/ReactiveCocoa/ReactiveCocoa" "${PODS_ROOT}/Headers/Public/youtube-ios-player-helper" ${PODS_TEDTV____KISSXML_HEADER_SEARCH_PATHS}
+OTHER_LDFLAGS = ${PODS_TEDTV____KISSXML_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}

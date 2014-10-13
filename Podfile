@@ -7,6 +7,7 @@ target "TEDTV2.0" do
 
 pod 'ReactiveCocoa', '2.3.1'
 pod 'youtube-ios-player-helper', '0.1.1'
+pod 'KissXML', '5.0'
 
 end
 
