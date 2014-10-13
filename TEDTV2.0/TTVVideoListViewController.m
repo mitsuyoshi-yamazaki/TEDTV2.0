@@ -10,6 +10,10 @@
 
 #import "TTVVideoViewController.h"
 
+#import "DDXML.h"
+#import "DDXMLElementAdditions.h"
+#import "DDXMLElement+TTVAdditions.h"
+
 @interface TTVVideoListViewController ()
 
 @property (nonatomic, copy) NSArray *contents;
@@ -20,11 +24,14 @@
 
 @implementation TTVVideoListViewController
 
+@synthesize contents = _contents;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	self.contents = @[@"Oj8eFu72_fc"];
+	[self loadVideoData];
 	
+//	self.contents = @[@"Oj8eFu72_fc"];
 	// http://www.youtube.com/rss/user/TEDtalksDirector/videos.rss
 }
 
@@ -33,30 +40,41 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Accessor
+- (void)setContents:(NSArray *)contents {
+	
+	if (contents == _contents) {
+		return;
+	}
+	
+	_contents = contents.copy;
+	
+	[self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+}
+
 #pragma mark - Loading
 - (void)loadVideoData {
 	
-//	NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-//	NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
-//	
-//	
-//		NSURL *URL = [NSURL URLWithString:@"http://www.youtube.com/rss/user/TEDtalksDirector/videos.rss"];
-//		NSURLSessionTask *task = [session dataTaskWithURL:URL completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-//			
-//			//			NSLog(@"request finished");
-//			//			NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
-//			
-//			id json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-//			
-//			//			NSLog(@"%@", json);
-//			
-//			[self.posts addObject:json];
-//			
-//			[self.coverScrollView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
-//			[self.coverTableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
-//		}];
-//		
-//		[task resume];
+	NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+	NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
+	
+	
+		NSURL *URL = [NSURL URLWithString:@"http://www.youtube.com/rss/user/TEDtalksDirector/videos.rss"];
+		NSURLSessionTask *task = [session dataTaskWithURL:URL completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+			
+			//			NSLog(@"request finished");
+			//			NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+			
+			DDXMLDocument *document = [[DDXMLDocument alloc] initWithData:data options:DDXMLDocumentXMLKind error:NULL];
+			DDXMLElement *rootElement = document.rootElement;
+			
+			self.contents = [[rootElement elementForName:@"channel"] elementsForName:@"item"];
+			
+			//			NSLog(@"%@", json);
+			
+		}];
+		
+		[task resume];
 }
 
 #pragma mark - Table view data source
@@ -71,8 +89,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    
-	cell.textLabel.text = self.contents[0];
+	
+	DDXMLElement *content = self.contents[indexPath.row];
+	
+	cell.textLabel.text = [content childValueForElementName:@"title"];
 	
     return cell;
 }
@@ -82,8 +102,11 @@
 	
 	if ([segue.identifier isEqualToString:@"PushVideoViewSegue"]) {
 		
+		NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
+		DDXMLElement *content = self.contents[indexPath.row];
+		
 		TTVVideoViewController *videoViewController = segue.destinationViewController;
-		videoViewController.content = self.contents[0];
+		videoViewController.content = content;
 	}
 }
 

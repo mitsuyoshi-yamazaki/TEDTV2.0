@@ -92,6 +92,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <outlet property="playerView" destination="Yju-gQ-GUS" id="WwD-T8-1Nv"/>
                     </connections>

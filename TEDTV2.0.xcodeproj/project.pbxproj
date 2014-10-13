@@ -15,6 +15,7 @@
 		2CF92FD919EB92A8004AF66D /* TEDTV2_0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF92FD819EB92A8004AF66D /* TEDTV2_0Tests.m */; };
 		2CF92FE719EB9459004AF66D /* TTVVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF92FE619EB9459004AF66D /* TTVVideoListViewController.m */; };
 		2CF92FEA19EB9465004AF66D /* TTVVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF92FE919EB9465004AF66D /* TTVVideoViewController.m */; };
+		2CF92FEE19EB9AA6004AF66D /* DDXMLElement+TTVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF92FED19EB9AA6004AF66D /* DDXMLElement+TTVAdditions.m */; };
 		4555FC17FC884A63B4FFE088 /* libPods-TEDTV2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD41033EE3B1E5FC2DAAB8C /* libPods-TEDTV2.0.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		2CF92FE619EB9459004AF66D /* TTVVideoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVVideoListViewController.m; sourceTree = "<group>"; };
 		2CF92FE819EB9465004AF66D /* TTVVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVVideoViewController.h; sourceTree = "<group>"; };
 		2CF92FE919EB9465004AF66D /* TTVVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVVideoViewController.m; sourceTree = "<group>"; };
+		2CF92FEC19EB9AA6004AF66D /* DDXMLElement+TTVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDXMLElement+TTVAdditions.h"; sourceTree = "<group>"; };
+		2CF92FED19EB9AA6004AF66D /* DDXMLElement+TTVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDXMLElement+TTVAdditions.m"; sourceTree = "<group>"; };
 		670ACC184A002A906B168EBF /* Pods-TEDTV2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEDTV2.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-TEDTV2.0/Pods-TEDTV2.0.release.xcconfig"; sourceTree = "<group>"; };
 		CAD6BF4649A4AAB8DCE2AA1E /* Pods-TEDTV2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEDTV2.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TEDTV2.0/Pods-TEDTV2.0.debug.xcconfig"; sourceTree = "<group>"; };
 		EBD41033EE3B1E5FC2DAAB8C /* libPods-TEDTV2.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TEDTV2.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +100,8 @@
 				2CF92FE619EB9459004AF66D /* TTVVideoListViewController.m */,
 				2CF92FE819EB9465004AF66D /* TTVVideoViewController.h */,
 				2CF92FE919EB9465004AF66D /* TTVVideoViewController.m */,
+				2CF92FEC19EB9AA6004AF66D /* DDXMLElement+TTVAdditions.h */,
+				2CF92FED19EB9AA6004AF66D /* DDXMLElement+TTVAdditions.m */,
 				2CF92FC619EB92A7004AF66D /* Main.storyboard */,
 				2CF92FC919EB92A7004AF66D /* Images.xcassets */,
 				2CF92FCB19EB92A7004AF66D /* LaunchScreen.xib */,
@@ -299,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF92FC219EB92A7004AF66D /* AppDelegate.m in Sources */,
+				2CF92FEE19EB9AA6004AF66D /* DDXMLElement+TTVAdditions.m in Sources */,
 				2CF92FBF19EB92A7004AF66D /* main.m in Sources */,
 				2CF92FE719EB9459004AF66D /* TTVVideoListViewController.m in Sources */,
 				2CF92FEA19EB9465004AF66D /* TTVVideoViewController.m in Sources */,

@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class DDXMLElement;
+
 @interface TTVVideoViewController : UIViewController
 
-@property (nonatomic, weak) NSString *content;
+@property (nonatomic, weak) DDXMLElement *content;
 
 @end
