@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TTVVideoListViewController.h
 //  TEDTV2.0
 //
 //  Created by Yamazaki Mitsuyoshi on 10/13/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TTVVideoListViewController : UITableViewController
 
 @end
-
