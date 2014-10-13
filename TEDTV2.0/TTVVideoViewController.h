@@ -10,4 +10,6 @@
 
 @interface TTVVideoViewController : UIViewController
 
+@property (nonatomic, weak) NSString *content;
+
 @end

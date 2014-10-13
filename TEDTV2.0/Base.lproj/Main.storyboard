@@ -9,6 +9,7 @@
             <objects>
                 <tableViewController id="AGr-a6-Lqw" customClass="TTVVideoListViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="l01-8C-gkY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -29,7 +30,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Ecl-h7-gVo" kind="show" id="2qs-ZO-Jeo"/>
+                                    <segue destination="Ecl-h7-gVo" kind="show" identifier="PushVideoViewSegue" id="2qs-ZO-Jeo"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -53,9 +54,47 @@
                         <viewControllerLayoutGuide type="bottom" id="bhz-e6-Wpa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="N3t-LF-1lS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yju-gQ-GUS" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bhz-e6-Wpa" firstAttribute="top" secondItem="Yju-gQ-GUS" secondAttribute="bottom" id="VBk-rM-jce"/>
+                            <constraint firstAttribute="trailing" secondItem="Yju-gQ-GUS" secondAttribute="trailing" id="gO9-Vj-Sgy"/>
+                            <constraint firstItem="Yju-gQ-GUS" firstAttribute="leading" secondItem="N3t-LF-1lS" secondAttribute="leading" id="iqW-Ww-Eax"/>
+                            <constraint firstItem="Yju-gQ-GUS" firstAttribute="top" secondItem="N3t-LF-1lS" secondAttribute="top" id="j8z-Lg-Re7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Yju-gQ-GUS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="gO9-Vj-Sgy"/>
+                                <exclude reference="iqW-Ww-Eax"/>
+                                <exclude reference="j8z-Lg-Re7"/>
+                                <exclude reference="VBk-rM-jce"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Yju-gQ-GUS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="gO9-Vj-Sgy"/>
+                                <include reference="iqW-Ww-Eax"/>
+                                <include reference="j8z-Lg-Re7"/>
+                                <include reference="VBk-rM-jce"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="playerView" destination="Yju-gQ-GUS" id="WwD-T8-1Nv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ouc-64-eRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
