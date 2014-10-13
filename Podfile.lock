@@ -1,0 +1,19 @@
+PODS:
+  - ReactiveCocoa (2.3.1):
+    - ReactiveCocoa/UI
+  - ReactiveCocoa/Core (2.3.1):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3.1)
+  - ReactiveCocoa/UI (2.3.1):
+    - ReactiveCocoa/Core
+  - youtube-ios-player-helper (0.1.1)
+
+DEPENDENCIES:
+  - ReactiveCocoa (= 2.3.1)
+  - youtube-ios-player-helper (= 0.1.1)
+
+SPEC CHECKSUMS:
+  ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
+  youtube-ios-player-helper: 53aecd0b4763a77e6890e9a7c55abb7b5c4bedea
+
+COCOAPODS: 0.34.1
