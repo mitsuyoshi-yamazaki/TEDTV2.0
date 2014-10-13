@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CF92FBF19EB92A7004AF66D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF92FBE19EB92A7004AF66D /* main.m */; };
+		2CF92FC219EB92A7004AF66D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF92FC119EB92A7004AF66D /* AppDelegate.m */; };
+		2CF92FC519EB92A7004AF66D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF92FC419EB92A7004AF66D /* ViewController.m */; };
+		2CF92FC819EB92A7004AF66D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF92FC619EB92A7004AF66D /* Main.storyboard */; };
+		2CF92FCA19EB92A7004AF66D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF92FC919EB92A7004AF66D /* Images.xcassets */; };
+		2CF92FCD19EB92A7004AF66D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF92FCB19EB92A7004AF66D /* LaunchScreen.xib */; };
+		2CF92FD919EB92A8004AF66D /* TEDTV2_0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF92FD819EB92A8004AF66D /* TEDTV2_0Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CF92FD319EB92A7004AF66D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF92FB119EB92A7004AF66D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF92FB819EB92A7004AF66D;
+			remoteInfo = TEDTV2.0;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CF92FB919EB92A7004AF66D /* TEDTV2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEDTV2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF92FBD19EB92A7004AF66D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF92FBE19EB92A7004AF66D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CF92FC019EB92A7004AF66D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2CF92FC119EB92A7004AF66D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2CF92FC319EB92A7004AF66D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2CF92FC419EB92A7004AF66D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2CF92FC719EB92A7004AF66D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CF92FC919EB92A7004AF66D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2CF92FCC19EB92A7004AF66D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2CF92FD219EB92A7004AF66D /* TEDTV2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TEDTV2.0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF92FD719EB92A7004AF66D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF92FD819EB92A8004AF66D /* TEDTV2_0Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEDTV2_0Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CF92FB619EB92A7004AF66D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF92FCF19EB92A7004AF66D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CF92FB019EB92A7004AF66D = {
+			isa = PBXGroup;
+			children = (
+				2CF92FBB19EB92A7004AF66D /* TEDTV2.0 */,
+				2CF92FD519EB92A7004AF66D /* TEDTV2.0Tests */,
+				2CF92FBA19EB92A7004AF66D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CF92FBA19EB92A7004AF66D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CF92FB919EB92A7004AF66D /* TEDTV2.0.app */,
+				2CF92FD219EB92A7004AF66D /* TEDTV2.0Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CF92FBB19EB92A7004AF66D /* TEDTV2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				2CF92FC019EB92A7004AF66D /* AppDelegate.h */,
+				2CF92FC119EB92A7004AF66D /* AppDelegate.m */,
+				2CF92FC319EB92A7004AF66D /* ViewController.h */,
+				2CF92FC419EB92A7004AF66D /* ViewController.m */,
+				2CF92FC619EB92A7004AF66D /* Main.storyboard */,
+				2CF92FC919EB92A7004AF66D /* Images.xcassets */,
+				2CF92FCB19EB92A7004AF66D /* LaunchScreen.xib */,
+				2CF92FBC19EB92A7004AF66D /* Supporting Files */,
+			);
+			path = TEDTV2.0;
+			sourceTree = "<group>";
+		};
+		2CF92FBC19EB92A7004AF66D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CF92FBD19EB92A7004AF66D /* Info.plist */,
+				2CF92FBE19EB92A7004AF66D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CF92FD519EB92A7004AF66D /* TEDTV2.0Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2CF92FD819EB92A8004AF66D /* TEDTV2_0Tests.m */,
+				2CF92FD619EB92A7004AF66D /* Supporting Files */,
+			);
+			path = TEDTV2.0Tests;
+			sourceTree = "<group>";
+		};
+		2CF92FD619EB92A7004AF66D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CF92FD719EB92A7004AF66D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CF92FB819EB92A7004AF66D /* TEDTV2.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF92FDC19EB92A8004AF66D /* Build configuration list for PBXNativeTarget "TEDTV2.0" */;
+			buildPhases = (
+				2CF92FB519EB92A7004AF66D /* Sources */,
+				2CF92FB619EB92A7004AF66D /* Frameworks */,
+				2CF92FB719EB92A7004AF66D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TEDTV2.0;
+			productName = TEDTV2.0;
+			productReference = 2CF92FB919EB92A7004AF66D /* TEDTV2.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CF92FD119EB92A7004AF66D /* TEDTV2.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF92FDF19EB92A8004AF66D /* Build configuration list for PBXNativeTarget "TEDTV2.0Tests" */;
+			buildPhases = (
+				2CF92FCE19EB92A7004AF66D /* Sources */,
+				2CF92FCF19EB92A7004AF66D /* Frameworks */,
+				2CF92FD019EB92A7004AF66D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CF92FD419EB92A7004AF66D /* PBXTargetDependency */,
+			);
+			name = TEDTV2.0Tests;
+			productName = TEDTV2.0Tests;
+			productReference = 2CF92FD219EB92A7004AF66D /* TEDTV2.0Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CF92FB119EB92A7004AF66D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Mitsuyoshi;
+				TargetAttributes = {
+					2CF92FB819EB92A7004AF66D = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					2CF92FD119EB92A7004AF66D = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 2CF92FB819EB92A7004AF66D;
+					};
+				};
+			};
+			buildConfigurationList = 2CF92FB419EB92A7004AF66D /* Build configuration list for PBXProject "TEDTV2.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CF92FB019EB92A7004AF66D;
+			productRefGroup = 2CF92FBA19EB92A7004AF66D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CF92FB819EB92A7004AF66D /* TEDTV2.0 */,
+				2CF92FD119EB92A7004AF66D /* TEDTV2.0Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CF92FB719EB92A7004AF66D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF92FC819EB92A7004AF66D /* Main.storyboard in Resources */,
+				2CF92FCD19EB92A7004AF66D /* LaunchScreen.xib in Resources */,
+				2CF92FCA19EB92A7004AF66D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF92FD019EB92A7004AF66D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CF92FB519EB92A7004AF66D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF92FC519EB92A7004AF66D /* ViewController.m in Sources */,
+				2CF92FC219EB92A7004AF66D /* AppDelegate.m in Sources */,
+				2CF92FBF19EB92A7004AF66D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF92FCE19EB92A7004AF66D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF92FD919EB92A8004AF66D /* TEDTV2_0Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CF92FD419EB92A7004AF66D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF92FB819EB92A7004AF66D /* TEDTV2.0 */;
+			targetProxy = 2CF92FD319EB92A7004AF66D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2CF92FC619EB92A7004AF66D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF92FC719EB92A7004AF66D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CF92FCB19EB92A7004AF66D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF92FCC19EB92A7004AF66D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CF92FDA19EB92A8004AF66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2CF92FDB19EB92A8004AF66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CF92FDD19EB92A8004AF66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TEDTV2.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2CF92FDE19EB92A8004AF66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TEDTV2.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2CF92FE019EB92A8004AF66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TEDTV2.0Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TEDTV2.0.app/TEDTV2.0";
+			};
+			name = Debug;
+		};
+		2CF92FE119EB92A8004AF66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TEDTV2.0Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TEDTV2.0.app/TEDTV2.0";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CF92FB419EB92A7004AF66D /* Build configuration list for PBXProject "TEDTV2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF92FDA19EB92A8004AF66D /* Debug */,
+				2CF92FDB19EB92A8004AF66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF92FDC19EB92A8004AF66D /* Build configuration list for PBXNativeTarget "TEDTV2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF92FDD19EB92A8004AF66D /* Debug */,
+				2CF92FDE19EB92A8004AF66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2CF92FDF19EB92A8004AF66D /* Build configuration list for PBXNativeTarget "TEDTV2.0Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF92FE019EB92A8004AF66D /* Debug */,
+				2CF92FE119EB92A8004AF66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CF92FB119EB92A7004AF66D /* Project object */;
+}
