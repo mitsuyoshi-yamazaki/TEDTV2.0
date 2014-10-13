@@ -160,6 +160,7 @@
 				2CF92FB619EB92A7004AF66D /* Frameworks */,
 				2CF92FB719EB92A7004AF66D /* Resources */,
 				2251588EFB4DFA49F775C980 /* Copy Pods Resources */,
+				2CF92FEB19EB98BA004AF66D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -276,6 +277,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TEDTV2.0/Pods-TEDTV2.0-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		2CF92FEB19EB98BA004AF66D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#env > env.txt\n\n#versionNumber=`/usr/libexec/PlistBuddy -c \"Print :CFBundleShortVersionString $versionNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"`\n\n#Update build number & version with number of git commits if in release mode\nif [ ${CONFIGURATION} == \"Release\" ]; then\nbuildNumber=$(git rev-list HEAD | wc -l | tr -d ' ')\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n\nfi;";
 		};
 /* End PBXShellScriptBuildPhase section */
 
